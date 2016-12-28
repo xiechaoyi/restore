@@ -9,7 +9,7 @@
       "version": "1.0.0",
       "type": "platform"
     },
-    "Wlniao.XCore": "1.0.0"
+    "Wlniao.XCore": "1.4.2"
   },
   "frameworks": {
     "netcoreapp1.6": {
