@@ -8,7 +8,8 @@ RUN curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/1.0.1/dotnet-dev
     && rm dotnet.tar.gz \
     && rm -rf /var/lib/apt/lists/* \
     && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
-
-ENTRYPOINT ["dotnet", "restore"]
-ONBUILD COPY . /wln
-ONBUILD WORKDIR /wln
+COPY . /wln
+RUN cd /wln/base && dotnet restore && cd /wln && rm -ef /wln/base
+WORKDIR /wln
+CMD dotnet restore
+CMD dotnet run
