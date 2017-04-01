@@ -11,5 +11,4 @@ RUN curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/1.0.1/dotnet-dev
 COPY . /wln
 RUN cd /wln/base && dotnet restore && cd /wln && rm -rf /wln/base
 WORKDIR /wln
-CMD dotnet restore
-CMD dotnet run
+CMD dotnet restore && dotnet run
