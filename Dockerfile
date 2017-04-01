@@ -9,7 +9,7 @@ RUN curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/1.0.1/dotnet-dev
     && rm -rf /var/lib/apt/lists/* \
     && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
 COPY . /wln
-RUN cd /wln/base && dotnet restore && cd /wln && rm -ef /wln/base
+RUN cd /wln/base && dotnet restore && cd /wln && rm -rf /wln/base
 WORKDIR /wln
 CMD dotnet restore
 CMD dotnet run
