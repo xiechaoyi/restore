@@ -6,7 +6,7 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Wlniao.DateTools.GetUtcUnix());
+            Console.WriteLine("restore:" + Wlniao.DateTools.GetUtcUnix());
         }
     }
 }
