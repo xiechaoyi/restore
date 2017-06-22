@@ -6,10 +6,10 @@
     <AssemblyName>base</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>base</PackageId>
-    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <RuntimeFrameworkVersion>1.1.2</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Wlniao.XCore" Version="1.7.0" />
+    <PackageReference Include="Wlniao.XCore" Version="1.7.9" />
   </ItemGroup>
 </Project>
