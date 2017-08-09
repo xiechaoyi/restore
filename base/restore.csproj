@@ -10,6 +10,6 @@
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Wlniao.XCore" Version="1.8.3"/>
+    <PackageReference Include="Wlniao.XCore" Version="1.8.6"/>
   </ItemGroup>
 </Project>
