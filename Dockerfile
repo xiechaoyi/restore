@@ -1,8 +1,3 @@
-FROM ideploy/restore:sdk
-
-ADD ./base /tmp/base
-ADD ./wln /wln
-RUN cd /tmp/base && dotnet restore && dotnet build 
-RUN cd /wln && rm -rf /tmp/base
-WORKDIR /wln
-ENTRYPOINT ["/bin/bash", "/wln/run.sh"]
+FROM wlniao/dotnet:2.0.3-sdk
+ONBUILD WORKDIR /wln
+ONBUILD ENTRYPOINT ["/bin/bash", "/wln/run.sh"]
