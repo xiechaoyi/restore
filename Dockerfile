@@ -1,8 +1,8 @@
 FROM wlniao/dotnet:2.0.3-sdk
 MAINTAINER WlniaoStudio <wlniao@qq.com>
 
-COPY ./base /tmp/base
-COPY ./wln /wln
+ADD ./base /tmp/base
+ADD ./wln /wln
 RUN cd /tmp/base 
 RUN dotnet restore
 RUN dotnet build 
