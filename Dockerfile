@@ -3,9 +3,7 @@ MAINTAINER WlniaoStudio <wlniao@qq.com>
 
 ADD ./base /tmp/base
 ADD ./wln /wln
-RUN cd /tmp/base 
-RUN dotnet restore
-RUN dotnet build 
+RUN cd /tmp/base && dotnet restore && dotnet build 
 RUN cd /wln && rm -rf /tmp/base
 WORKDIR /wln
 ENTRYPOINT ["/bin/bash", "/wln/run.sh"]
