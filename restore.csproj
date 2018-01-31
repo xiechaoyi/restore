@@ -9,6 +9,6 @@
     <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Wlniao.XCore" Version="2.0.1"/>
+    <PackageReference Include="Wlniao.XCore" Version="2.0.2"/>
   </ItemGroup>
 </Project>
